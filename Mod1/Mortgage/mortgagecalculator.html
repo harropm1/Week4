@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Fictional Financial</title>
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Future Value Calculator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Annuity Calculator</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <h1 class="display-1 text-center">Fictional Financial</h1>
+    </header>
+
+    <main>
+        <!--description of page-->
+        <div class="container">
+            <article class="text-center">
+                <h2 class="display-4">Welcome to the Mortgage Calculator!</h2>
+                <p>Ready to get started with buying a house but don't know where to start? Our mortgage calculator will
+                    help you figure out your monthly payment and the total cost of your loan. Just enter some
+                    information in the fields below and we'll do the rest!</p>
+                <small class="form-text text-muted">
+                    Please only enter numbers and decimal points. Entering commas, dollar signs, or anything else will
+                    cause an error.
+                </small>
+            </article>
+
+            <!--form and what the action should be, but test environments don't work-->
+            <!--<form name="mortgage" action="#" method="POST">-->
+            <form name="mortgage" action="#" method="GET" id="inputForm">
+                <div class="form-group">
+                    <label for="loanAmount">Loan Amount</label>
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">$</div>
+                        <input type="text" class="form-control" id="loanAmount" name="loanAmount"
+                            placeholder="Enter Loan Amount" autofocus>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="interestRate">Interest Rate</label>
+                    <div class="input-group-append">
+                        <input type="text" class="form-control" id="interestRate" name="interestRate"
+                            placeholder="Enter Interest Rate">
+                        <div class="input-group-text">%</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="loanLength">Length of Loan</label>
+                    <div class="input-group-append">
+                        <input type="text" class="form-control" id="loanLength" name="loanLength"
+                            placeholder="Enter Loan Length in years">
+                        <div class="input-group-text">Years</div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-outline-success" id="calculate">Calculate</button>
+                <button type="reset" class="btn btn-outline-danger">Reset</button>
+            </form>
+
+            <!--form for results-->
+            <form name="monthlyPaymentResults" id="resultsForm" action="#">
+                <div class="form-group">
+                    <label for="monthlyPayment">Monthly Payment</label>
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">$</div>
+                        <input class="form-control" type="text" id="monthlyPayment" name="monthlyPayment" readonly>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="totalLoan">Total Cost of Loan</label>
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">$</div>
+                        <input class="form-control" type="text" id="totalLoan" name="totalLoan" readonly>
+                    </div>
+                </div>
+                <button type="reset" class="btn btn-outline-danger">Reset</button>
+            </form>
+        </div>
+    </main>
+
+    <!--footer-->
+    <hr>
+    <footer class="text-right">
+        <p>All calculations done by Michelle Harrop, and she's bad at math, so go easy on her.</p>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!--My Scripts-->
+    <script src="scripts/mortgagecalculator.js"></script>
+
+</body>
+
+</html>
