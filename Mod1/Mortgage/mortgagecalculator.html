@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="styles/mortgagecalculator.css">
+
     <title>Fictional Financial</title>
 </head>
 
@@ -60,7 +62,7 @@
                     <div class="input-group-prepend">
                         <div class="input-group-text">$</div>
                         <input type="text" class="form-control" id="loanAmount" name="loanAmount"
-                            placeholder="Enter Loan Amount" autofocus>
+                            placeholder="Enter Loan Amount">
                     </div>
                 </div>
                 <div class="form-group">
@@ -83,24 +85,8 @@
                 <button type="reset" class="btn btn-outline-danger">Reset</button>
             </form>
 
-            <!--form for results-->
-            <form name="monthlyPaymentResults" id="resultsForm" action="#">
-                <div class="form-group">
-                    <label for="monthlyPayment">Monthly Payment</label>
-                    <div class="input-group-prepend">
-                        <div class="input-group-text">$</div>
-                        <input class="form-control" type="text" id="monthlyPayment" name="monthlyPayment" readonly>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="totalLoan">Total Cost of Loan</label>
-                    <div class="input-group-prepend">
-                        <div class="input-group-text">$</div>
-                        <input class="form-control" type="text" id="totalLoan" name="totalLoan" readonly>
-                    </div>
-                </div>
-                <button type="reset" class="btn btn-outline-danger">Reset</button>
-            </form>
+            <h3 id="monthlyPaymentDiv">Monthly Payment: $<span id="monthlyPayment"></span></h3>
+            <h3 id="totalLoanDiv">Total Cost of Loan: $<span id="totalLoan"></span></h3>
         </div>
     </main>
 

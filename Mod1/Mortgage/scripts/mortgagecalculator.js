@@ -11,7 +11,7 @@ $(function()
             }
             else
             {
-                $("#monthlyPayment").val(monthlyPayment.toFixed(2));
+                $("#monthlyPayment").text(monthlyPayment.toFixed(2));
             }
 
         let totalLoan = (($("#loanLength").val() * 12) * monthlyPayment);
@@ -21,8 +21,11 @@ $(function()
             }
             else
             {
-                $("#totalLoan").val(totalLoan.toFixed(2));
+                $("#totalLoan").text(totalLoan.toFixed(2));
             }
+
+        $("#monthlyPaymentDiv").fadeIn();
+        $("#totalLoanDiv").fadeIn();
     });
 });
 
