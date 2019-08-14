@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="styles/icecream.css">
+
+    <title>Ice Cream Shoppe</title>
+</head>
+
+<body>
+    <header class="text-center">
+        <h1 class="display-1">Ice Cream Shoppe</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <form>
+                <h2>Ice Cream (no choice of flavors, you get what you get)</h2>
+                <div class="form-row">
+                    <label for="numberScoops" class="col-md-2">How Many Scoops?</label>
+                    <select class="form-control col-md-2" id="numberScoops" autofocus>
+                        <option value="1">One Scoop</option>
+                        <option value="2">Two Scoops</option>
+                        <option value="3">Three Scoops</option>
+                    </select>
+                </div>
+                <h2>Choose One</h2>
+                <div class="form-check col-md-4">
+                    <input class="form-check-input" type="radio" name="cupConeRadio" id="cup" value="cup" checked>
+                    <label class="form-check-label" for="cup">
+                        Cup
+                    </label>
+                </div>
+                <div class="form-check col-md-4">
+                    <input class="form-check-input" type="radio" name="cupConeRadio" id="cone" value="cone">
+                    <label class="form-check-label" for="cone">
+                        Waffle Cone ($1.00)
+                    </label>
+                </div>
+                <h2>Add additional toppings?</h2>
+                <div class="form-check col-md-4">
+                    <input class="form-check-input" type="checkbox" value="hotFudge" id="hotFudge">
+                    <label class="form-check-label" for="hotFudge">
+                        Hot Fudge ($1.25)
+                    </label>
+                </div>
+                <div class="form-check col-md-4">
+                    <input class="form-check-input" type="checkbox" value="" id="sprinkles">
+                    <label class="form-check-label" for="sprinkles">
+                        Sprinkles ($0.25)
+                    </label>
+                </div>
+                <div class="form-check col-md-4">
+                    <input class="form-check-input" type="checkbox" value="" id="whippedCream">
+                    <label class="form-check-label" for="whippedCream">
+                        Whipped Cream ($0.75)
+                    </label>
+                </div>
+                <br />
+                <div class="form-row col-md-4">
+                    <label for="messageArea">Add a note of what kind of ice cream you like and maybe we'll give it to you (or maybe not)</label>
+                    <textarea class="form-control" id="messageArea" maxlength="250"></textarea>
+                    <p><span id="charCount">250</span> characters remaining</p>
+                </div>
+                <div>
+                    <button type="button" id="calculateBtn" class="btn btn-primary">Calculate Price of Ice
+                        Cream</button>
+                    <button type="reset" id="reset" class="btn btn-primary">Reset</button>
+                </div>
+                <br />
+                <div></div>
+                <h2 id="priceDiv">Price: $<span id="outputPrice"></span></h2>
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!--My JavaScript-->
+    <script src="scripts/icecream.js"></script>
+
+</body>
+
+</html>
