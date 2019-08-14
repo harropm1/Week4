@@ -22,7 +22,7 @@ function getPrice(numberScoops, cupOrCone, hotFudge, sprinkles, whippedCream)
     if (cupOrCone == "cone")
     {
         price += 1.00;
-    }
+    } 
 
     if (hotFudge)
     {

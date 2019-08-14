@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles/products.css">
+
+    <title>FOOD!</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="display-1 text-center">FOOD!</h1>
+    </header>
+
+    <!--dropdowns/search buttons/table-->
+    <main>
+        <div class="container">
+            <form>
+            <div class="sortByCategory">
+                <label for="categorySelect">Categories</label>
+                <select class="form-control col-md-6" id="categorySelect">
+                    <option value="Choose one">Choose one</option>
+                    <option value="Beverages">Beverages</option>
+                    <option value="Condiments">Condiments</option>
+                    <option value="Confections">Confections</option>
+                    <option value="Dairy Products">Dairy Products</option>
+                    <option value="Grains/Cereals">Grains/Cereals</option>
+                    <option value="Meat/Poultry">Meat/Poultry</option>
+                    <option value="Produce">Produce</option>
+                    <option value="Seafood">Seafood</option>
+                </select>
+            </div>
+            </form>
+            <br />
+            <h2 id="errorMsg"></h2>
+            <table id="productTable" class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Product Id</th>
+                        <th>Product Name</th>
+                        <th>Unit Price</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!--footer-->
+    <hr>
+    <footer class="text-right">
+        <p>All data provided by Dana. Also, Michelle was sick, so go easy on her.</p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!--My JavaScript-->
+    <script src="scripts/products.js"></script>
+</body>
+
+</html>
