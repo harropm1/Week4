@@ -1,0 +1,7 @@
+input {
+    width: 60%;
+}
+
+.visible {
+    display: none;
+}

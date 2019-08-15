@@ -36,7 +36,7 @@ function createSearchByCategoryTable(list, selection)
 
 function insertTableData(list)
 {
-    let rowBeingEntered = "<tr><td>" + list.ProductID + "</td><td>" + list.ProductName + "</td><td>" + Number(list.UnitPrice).toFixed(2) + "</td><td><a href='details.html?productid=" + list.ProductID + "'>Details</a></td></tr>";
+    let rowBeingEntered = "<tr><td>" + list.ProductID + "</td><td>" + list.ProductName + "</td><td>" + Number(list.UnitPrice).toFixed(2) + "</td><td><a target='rptTab' href='details.html?productid=" + list.ProductID + "'>Details</a></td></tr>";
 
     $("#tableBody").append(rowBeingEntered);
 }
