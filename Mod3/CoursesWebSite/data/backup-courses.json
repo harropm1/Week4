@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "dept": "CompSci",
+        "courseNum": 101,
+        "courseName": "HTML5 and CSS3",
+        "instructor": "Rob",
+        "startDate": "July 8",
+        "numDays": 10
+    },
+    {
+        "id": 2,
+        "dept": "CompSci",
+        "courseNum": 102,
+        "courseName": "JavaScript",
+        "instructor": "Dana",
+        "startDate": "July 22",
+        "numDays": 35
+    },
+    {
+        "id": 3,
+        "dept": "CompSci",
+        "courseNum": 201,
+        "courseName": "More Things",
+        "instructor": "Rob",
+        "startDate": "Sep 9",
+        "numDays": 15
+    },
+    {
+        "id": 4,
+        "dept": "Math",
+        "courseNum": 103,
+        "courseName": "Algebra",
+        "instructor": "Michelle",
+        "startDate": "August 19",
+        "numDays": 10
+    },
+    {
+        "id": 5,
+        "dept": "CompSci",
+        "courseNum": 301,
+        "courseName": "Calcullus",
+        "instructor": "Dana",
+        "startDate": "August 5",
+        "numDays": 5
+    },
+    {
+        "id": 6,
+        "dept": "CompSci",
+        "courseNum": 202,
+        "courseName": "Building Robots",
+        "instructor": "Elisha",
+        "startDate": "September 30",
+        "numDays": 5
+    },
+    {
+        "id": 7,
+        "dept": "English",
+        "courseNum": 401,
+        "courseName": "Doctor Who and literature",
+        "instructor": "Megan",
+        "startDate": "September 2",
+        "numDays": 10
+    },
+    {
+        "id": 8,
+        "dept": "English",
+        "courseNum": 402,
+        "courseName": "Shakespeare",
+        "instructor": "Zach",
+        "startDate": "September 16",
+        "numDays": 5
+    },
+    {
+        "id": 9,
+        "dept": "History",
+        "courseNum": "301",
+        "courseName": "History of Rock and Roll",
+        "instructor": "Michelle",
+        "startDate": "September 30",
+        "numDays": 15
+    },
+    {
+        "id": 10,
+        "dept": "History",
+        "courseNum": "401",
+        "courseName": "Military History",
+        "instructor": "Zach",
+        "startDate": "September 30",
+        "numDays": 25
+    }
+]
